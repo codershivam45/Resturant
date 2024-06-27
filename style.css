@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background:black;
+}
+nav{
+    padding: 0px 4px;
+    display:flex;
+    justify-content: space-between;
+    background-color: yellow;
+    align-items: center;
+}
+nav .company{
+    font-size:25px;
+}
+.search-links{
+    display:flex;
+    gap:20px;
+}
+
+ul{
+    display:flex;
+    list-style-type: none;   
+    align-items: center; 
+}
+
+ul li {
+    color:blueviolet;
+    text-decoration-line: none;
+    font-size:22px;
+    padding-right:10px;
+    cursor: pointer;
+
+}
+
+.searchBar{
+    width:55vw;
+    height:3vw;
+    font-size:25px;
+}
+.card{
+    position:relative;
+    width:400px;
+    height:470px;
+    background-color: white; 
+    margin:20px;
+    border-radius: 10px ;
+}
+.card img{
+    /* border-radius-top: 10px; */
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    width: 400px;
+    height:250px;
+    object-fit: cover;
+}
+.menu{
+    display:none;
+}
+.Resturant{
+    display: block;
+}
+
+.card-body{
+    padding: 20px;
+}
+.card-body div{
+    margin-bottom: 10px;
+}
+
+.card-body .title {
+    color:rgb(36, 151, 113);
+    font-size: 30px;
+}
+
+.card-body .price{
+    color:grey;
+    font-size:18px;
+}
+
+.card-body .description{
+    color:red;
+    font-size:18px
+}
+.card-body .category{
+    color: grey;
+    position:absolute;
+    bottom:20px;
+    font-size: 20px;
+}
+card{
+    display:flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+    color:white;
+    font-size:40px;
+}
+
+.banner{
+    width:80vw;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.banner video{
+    width:80vw;
+    height:50vh;
+    object-fit: cover;
+    margin:auto;
+    border-radius: 10px;
+}
+datalist option{
+    background-color: white;
+}
+.no-dish-found {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+    color: white;
+    margin:auto;
+}
+
+@media (max-width: 1300px) {
+    .company{
+        display: flex;
+        align-items: center;
+        padding:10px;
+        gap:10px;
+    }
+    .menu{
+        display: block;
+    }
+    nav{
+        justify-content: normal;
+        gap:10px;
+        align-items:center;
+        position: relative;
+        /* height:7vh; */
+
+    }
+    .company{
+        position: relative;
+        /* top:-5px; */
+    }
+    .Resturant{
+        position: relative;
+        top:-3px;
+    }
+
+    .search-links{
+        display:none;
+    }
+    .searchBar{
+        width:98vw;
+        height:5vh;
+    }
+    nav{
+       display:block;
+    }
+    ul{
+        display:block;
+    }
+    ul li{
+        margin-bottom:5px;
+    }
+    
+    card{
+        /* width:80vw; */
+        /* justify-content:center; */
+        justify-content: space-between;
+    }
+    .card{
+        position:relative;
+        width:340px;
+        height:490px;
+        background-color: white; 
+        margin:20px;
+        border-radius: 10px ;
+    }
+    .card img{
+        /* border-radius-top: 10px; */
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        width: 340px;
+        height:250px;
+        object-fit: cover;
+    }
+    /* .banner{
+        width:90vw;
+    }
+    .video{
+        width:90vw;
+    } */
+}
+
+@media (max-width:768px){
+    card{
+        width:100vw;
+        justify-content: center;
+    }
+}
+@media (max-width:900px){
+    .card,.card img{
+        width:300px;
+    }
+}
